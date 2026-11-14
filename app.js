@@ -146,5 +146,3 @@ function average(list) {
 const list = getList(TMDB);
 	["title", "release_date", "vote_average"]
 );
-
-console.log(`C4: 검색 결과 개수 ${search(list, "the").length}`);
