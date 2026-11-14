@@ -1,4 +1,5 @@
 // ===== Part A =====
+// Part A에서는 영화 데이터의 평균 평점, 최고 평점, 연대별 개수, 관객 수 등을 계산하는 기본 함수를 만들었다.
 function countByDecade(list) {
 	let count2020 = 0;
 	let count2010 = 0;
@@ -46,6 +47,7 @@ function filterByAudience(list, min) {
 }
 
 // ===== Part B =====
+//  Part B에서는 정렬, 검색, 년수 계산 같은 실용적인 기능을 추가했다.
 
 //배열 → 평균 평점(숫자)
 function average(list) {
@@ -128,6 +130,7 @@ try {
 	console.error("Part B 출력 중 에러 발생:", error);
 }
 // ===== Part C ===== 
+//  Part C에서는 TMDB 데이터를 다루기 위해 목록을 꺼내고 평균을 구하는 범용 함수를 만들었다.
 function getList(data) {
 	return data.results;
 }
