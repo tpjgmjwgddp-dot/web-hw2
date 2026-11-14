@@ -144,5 +144,3 @@ function average(list) {
 	return averageBy(list, "rating");
 }
 const list = getList(TMDB);
-	["title", "release_date", "vote_average"]
-);
