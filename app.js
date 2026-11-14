@@ -144,14 +144,6 @@ function average(list) {
 	return averageBy(list, "rating");
 }
 const list = getList(TMDB);
-
-
-
-console.log(`C1: 페이지 ${TMDB.page}/${TMDB.total_pages}, 전체 ${TMDB.total_results}편, 이번 응답 ${list.length}편`);
-console.log(`C2: 상영작 평균 평점 ${averageBy(list, "vote_average").toFixed(1)}`);
-
-console.table(
-	sortBy(list, "vote_average", true).slice(0, 5),
 	["title", "release_date", "vote_average"]
 );
 
